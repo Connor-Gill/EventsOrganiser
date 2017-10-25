@@ -5,7 +5,6 @@ import urllib2, json
 
 jsonTest = urllib2.urlopen("https://graph.facebook.com/facebook/picture?redirect=false").read()
 
-Windows.security
 
 print json.loads(jsonTest).values()[0][u"url"]
 
